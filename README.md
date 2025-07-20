@@ -102,6 +102,13 @@ Itt láthatók a legnépszerűbb kérdések, kategóriák, szűrési lehetőség
 - Minden fő funkció manuálisan tesztelve.
 - A projekt tartalmaz egy feature tesztet, amely ellenőrzi, hogy egy bejelentkezett felhasználó sikeresen tud új kérdést létrehozni, és a kérdés az adatbázisba kerül
 
+## Főoldal elérése
+
+A főoldal a kérdések listájával itt érhető el:  
+[http://127.0.0.1:8000/questions](http://127.0.0.1:8000/questions)
+
+Itt láthatók a legnépszerűbb kérdések, kategóriák, szűrési lehetőség, valamint innen indítható új kérdés felvitele is.
+
 
 ## Készítő
 
