@@ -39,13 +39,6 @@ Az oldal hasonlóan működik, mint a gyakorikerdesek.hu vagy a stackoverflow.co
 ### Profil oldal
 ![Profil oldal](images/profil.png)
 
-## Főoldal elérése
-
-A főoldal a kérdések listájával itt érhető el:  
-[http://127.0.0.1:8000/questions](http://127.0.0.1:8000/questions)
-
-Itt láthatók a legnépszerűbb kérdések, kategóriák, szűrési lehetőség, valamint innen indítható új kérdés felvitele is.
-
 ## Telepítés és futtatás
 
 1. **Függőségek telepítése**:
