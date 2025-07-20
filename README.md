@@ -55,19 +55,24 @@ Az oldal hasonlóan működik, mint a gyakorikerdesek.hu vagy a stackoverflow.co
     ```
 3. **Migrációk és seederek futtatása**:
     ```sh
-    php artisan migrate:fresh
+    php artisan migrate
     php artisan db:seed --class=CategorySeeder
     ```
     - Ez létrehozza a táblákat és feltölti az előre beállított 10 kategóriát.
 4. **Fejlesztői szerver indítása**:
+   Ezt a két parancsot 2 külön terminálban kell futtatnod:
+   - **1. terminál:**
     ```sh
     php artisan serve
+    ```
+   - **2. terminál:**
+    ```sh
     npm run dev
     ```
+
 5. **Tailwind CSS fordítása**:  
-   A stílusok megjelenítéséhez ezt a parancsot **mindig** futtasd egy külön terminálban:
+   A stílusok megjelenítéséhez ezt a parancsot futtasd egy **3. terminálban:**
     ```sh
-    npm run build                                      
     npx tailwindcss -i ./resources/css/app.css -o ./public/build/app.css --watch
     ```
 
