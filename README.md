@@ -48,24 +48,39 @@ Itt láthatók a legnépszerűbb kérdések, kategóriák, szűrési lehetőség
 
 ## Telepítés és futtatás
 
-1. **Migrációk és seederek futtatása**:
+1. **Függőségek telepítése**:
+    ```sh
+    composer install
+    npm install
+    ```
+
+2. **Környezet beállítása**:
+    - Hozz létre egy .env fájlt a tartalma legy az .env.example
+    ```sh
+    copy .env.example .env
+    php artisan key:generate
+    ```
+3. **Migrációk és seederek futtatása**:
     ```sh
     php artisan migrate:fresh
     php artisan db:seed --class=CategorySeeder
     ```
-    Ez létrehozza a táblákat és feltölti a 10 kategóriát.
-2. **Fejlesztői szerver indítása**:
+    - Ez létrehozza a táblákat és feltölti az előre beállított 10 kategóriát.
+4. **Fejlesztői szerver indítása**:
     ```sh
     php artisan serve
     npm run dev
     ```
-3. **Tailwind CSS fordítása**:  
+5. **Tailwind CSS fordítása**:  
    A stílusok megjelenítéséhez ezt a parancsot **mindig** futtasd egy külön terminálban:
     ```sh
     npm run build                                      
     npx tailwindcss -i ./resources/css/app.css -o ./public/build/app.css --watch
     ```
-4. **Belépés, regisztráció**: Az oldalon regisztrált felhasználók tudnak feltenni kérdéseket, válaszolni kérdésekre valami likeolni és dislikolni a kérdésekre jött válaszokat.
+
+6. **Alkalmazás használata**: 
+- Nyisd meg a böngészőben: [http://127.0.0.1:8000/questions](http://127.0.0.1:8000/questions)
+- Az oldalon regisztrált felhasználók tudnak feltenni kérdéseket, válaszolni kérdésekre valami likeolni és dislikolni a kérdésekre jött válaszokat.
 
 ## Adatbázis szerkezet (ERD)
 
