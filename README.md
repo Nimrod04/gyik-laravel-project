@@ -39,7 +39,26 @@ Az oldal hasonlóan működik, mint a gyakorikerdesek.hu vagy a stackoverflow.co
 ### Profil oldal
 ![Profil oldal](images/profil.png)
 
+
+## Követelmények
+
+A projekt futtatásához szükséges:
+- **PHP**: 8.1 vagy újabb
+- **Composer**: 2.0 vagy újabb
+- **Node.js**: 16.0 vagy újabb  
+- **npm**: 8.0 vagy újabb
+- **SQLite** (alapértelmezett) vagy **MySQL**
+
+Verzió ellenőrzés:
+```sh
+php --version
+composer --version
+node --version
+npm --version
+```
+
 ## Telepítés és futtatás
+
 
 1. **Függőségek telepítése**:
     ```sh
